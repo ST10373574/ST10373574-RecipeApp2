@@ -63,7 +63,7 @@ class Recipe
     // Constructor
     public Recipe()
     {
-        // Initialize arrays
+        // 
         Ingredients = new Ingredient[0]; // Start with an empty array
         Steps = new Step[0]; // Start with an empty array
     }
