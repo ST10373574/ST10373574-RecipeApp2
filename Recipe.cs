@@ -5,7 +5,7 @@ class Recipe
 {
     // Properties
     public Ingredient[] Ingredients { get; set; }
-    public Ingredient[] OriginalIngredients { get; set; } // Store original quantities for resetting
+    public Ingredient[] OriginalIngredients { get; set; } // 
     public Step[] Steps { get; set; }
     private double ScalingFactor { get; set; } = 1.0; // Default scaling factor is 1.0 (no scaling)
 
@@ -49,7 +49,7 @@ class Recipe
         {
             for (int i = 0; i < Ingredients.Length; i++)
             {
-                // 
+                // Divide the quantity by the factor it was scaled by
                 Ingredients[i].Quantity = OriginalIngredients[i].Quantity / ScalingFactor;
             }
         }
