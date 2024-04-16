@@ -2,7 +2,7 @@
 {
     class Step
     {
-        //Get abd set for description
+        // Property
         public string Description { get; set; }
     }
 }
