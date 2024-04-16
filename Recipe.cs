@@ -25,7 +25,7 @@ class Recipe
         }
     }
 
-    // Method to scale the recipe by a factor
+    // 
     public void ScaleRecipe(double factor)
     {
         if (OriginalIngredients == null)
