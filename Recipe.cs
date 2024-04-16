@@ -34,7 +34,7 @@ class Recipe
             OriginalIngredients = new Ingredient[Ingredients.Length];
             Array.Copy(Ingredients, OriginalIngredients, Ingredients.Length);
         }
-
+        
         ScalingFactor = factor; // Update scaling factor
         foreach (var ingredient in Ingredients)
         {
@@ -42,14 +42,14 @@ class Recipe
         }
     }
 
-    // 
+    // Method to reset quantities to original values
     public void ResetQuantities()
     {
         if (OriginalIngredients != null && OriginalIngredients.Length == Ingredients.Length)
         {
             for (int i = 0; i < Ingredients.Length; i++)
             {
-                // Divide the quantity by the factor it was scaled by
+                // 
                 Ingredients[i].Quantity = OriginalIngredients[i].Quantity / ScalingFactor;
             }
         }
