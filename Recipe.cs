@@ -25,7 +25,7 @@ class Recipe
         }
     }
 
-    // 
+    // Method to scale the recipe by a factor
     public void ScaleRecipe(double factor)
     {
         if (OriginalIngredients == null)
@@ -42,7 +42,7 @@ class Recipe
         }
     }
 
-    // Method to reset quantities to original values
+    // 
     public void ResetQuantities()
     {
         if (OriginalIngredients != null && OriginalIngredients.Length == Ingredients.Length)
