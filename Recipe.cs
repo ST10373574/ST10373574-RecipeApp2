@@ -5,9 +5,9 @@ class Recipe
 {
     // Properties
     public Ingredient[] Ingredients { get; set; }
-    public Ingredient[] OriginalIngredients { get; set; } // 
+    public Ingredient[] OriginalIngredients { get; set; } //  Store original quantities for resetting
     public Step[] Steps { get; set; }
-    private double ScalingFactor { get; set; } = 1.0; // Default scaling factor is 1.0 (no scaling)
+    private double ScalingFactor { get; set; } = 1.0; // 
 
     // Method to display the recipe
     public void DisplayRecipe()
